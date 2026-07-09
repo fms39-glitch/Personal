@@ -205,6 +205,179 @@ body {
     color: #444;
 }
 
+.section-content a {
+    color: #9E2B2B;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.section-content a:hover {
+    color: #7a1f1f;
+}
+
+.summary {
+    font-size: 1.0625rem;
+    line-height: 1.75;
+    margin: 0;
+}
+
+.entry {
+    margin-bottom: 1.75rem;
+    padding-bottom: 1.75rem;
+    border-bottom: 1px solid #e8eef4;
+}
+
+.entry:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.entry-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 0.35rem 1.5rem;
+    margin-bottom: 0.35rem;
+}
+
+.entry-header strong {
+    font-size: 1.0625rem;
+    color: #1a1a1a;
+}
+
+.entry-dates {
+    font-size: 0.9375rem;
+    color: #555;
+    white-space: nowrap;
+}
+
+.entry-meta {
+    font-size: 0.9875rem;
+    color: #444;
+    margin-bottom: 0.65rem;
+}
+
+.entry-meta a {
+    color: #9E2B2B;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.entry-meta a:hover {
+    color: #7a1f1f;
+}
+
+.entry-body {
+    margin: 0;
+    padding-left: 1.25rem;
+}
+
+.entry-body li {
+    margin-bottom: 0.55rem;
+}
+
+.project-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.5rem 1rem;
+    margin-bottom: 0.35rem;
+}
+
+.project-header strong {
+    font-size: 1.0625rem;
+}
+
+.project-link {
+    font-size: 0.9375rem;
+}
+
+.project-link a {
+    color: #9E2B2B;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.project-link a:hover {
+    color: #7a1f1f;
+}
+
+.project-role {
+    font-size: 0.9375rem;
+    color: #555;
+    margin-bottom: 0.65rem;
+}
+
+.skill-category {
+    margin-bottom: 1.1rem;
+}
+
+.skill-category:last-child {
+    margin-bottom: 0;
+}
+
+.skill-category strong {
+    display: block;
+    margin-bottom: 0.35rem;
+    color: #4B78A3;
+    font-size: 0.9375rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.skill-category span {
+    color: #333;
+    line-height: 1.65;
+}
+
+.tag-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    margin-top: 0.5rem;
+}
+
+.tag {
+    display: inline-block;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    padding: 0.3rem 0.65rem;
+    background-color: #eef4fa;
+    color: #4B78A3;
+    border: 1px solid #d8e3ed;
+    border-radius: 4px;
+}
+
+.social-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem 1.25rem;
+    margin-top: 1rem;
+}
+
+.social-bar a {
+    color: #9E2B2B;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    font-size: 0.9375rem;
+}
+
+.social-bar a:hover {
+    color: #7a1f1f;
+}
+
+.edu-degree {
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+.edu-detail {
+    color: #444;
+    margin-top: 0.25rem;
+}
+
 @media (max-width: 768px) {
     body {
         padding: 1rem 0.75rem 2rem;
