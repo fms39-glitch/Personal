@@ -1,0 +1,165 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Faizan Mohammed Jamal Shaikh} \\ \vspace{1pt}
+    \small 973-368-3440 $|$ \href{mailto:faizanshaikh2007304@gmail.com}{\underline{faizanshaikh2007304@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/fms39}{\underline{linkedin.com/in/fms39}} $|$
+    \href{https://github.com/fms39-glitch}{\underline{github.com/fms39-glitch}}
+\end{center}
+
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {New Jersey Institute of Technology}{Newark, NJ}
+      {BS in Computer Science; GPA: 3.85/4.00}{Expected May 2029}
+      \resumeItemListStart
+        \resumeItem{\textbf{Honors:} Dean's Scholar, Albert Dorman Honors College}
+        \resumeItem{\textbf{Coursework:} Data Structures \& Algorithms, Machine Learning, Data Science, Discrete Math, Linear Algebra}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Co-founder \& Developer}{Jul 2026 -- Present}
+      {Thozha}{Newark, NJ}
+      \resumeItemListStart
+        \resumeItem{Spearheading the development of a comprehensive settlement platform for international students, streamlining housing, banking, and community integration.}
+        \resumeItem{Architecting a real-time personalized dashboard to dynamically surface affordable housing listings, banking options, and visa-specific resources based on user profiles.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Undergraduate Research Assistant}{Jan 2026 -- Present}
+      {New Jersey Institute of Technology}{Newark, NJ}
+      \resumeItemListStart
+        \resumeItem{Developing a Clinical Ontology Evaluation Framework leveraging Python, Pandas, and REST APIs to benchmark LLMs on 400+ SNOMED CT concepts.}
+        \resumeItem{Designing LLM-as-ontology-server evaluation pipelines in collaboration with a PhD researcher, utilizing Git for version control.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {IT Support Specialist (Tier 2)}{Mar 2026 -- Present}
+      {New Jersey Institute of Technology}{Newark, NJ}
+      \resumeItemListStart
+        \resumeItem{Delivering Tier 2 technical support and hardware management for university infrastructure, collaborating with cybersecurity teams.}
+        \resumeItem{Diagnosing and resolving escalated software, hardware, and network issues in a high-volume academic environment.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Secure AI Interview Environment} $|$ \emph{React, Node.js, WebRTC, Anti-Cheat}}{Aug 2026 -- Present}
+          \resumeItemListStart
+            \resumeItem{Developing a secure interview environment that actively prevents cheating by blocking unauthorized AI assistants (like Claude) and external resources during assessments.}
+            \resumeItem{Implementing advanced monitoring capabilities to ensure interview integrity while maintaining a seamless candidate experience.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{\href{https://xyrisvision.vercel.app}{Xyris Vision}} $|$ \emph{React, Supabase, Stripe, Computer Vision}}{Jun 2026}
+          \resumeItemListStart
+            \resumeItem{Built a privacy-first image redaction web application in 24 hours at the NJx Hackathon, acquiring 50+ active users.}
+            \resumeItem{Engineered a client-side processing architecture to scrub EXIF metadata and redact PII using computer vision, ensuring zero server-side data persistence.}
+            \resumeItem{Integrated Stripe for usage-based billing and Supabase for secure backend authentication.}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{\href{https://squadup.qzz.io}{SquadUp}} $|$ \emph{React, Node.js, Full-Stack}}{Feb 2026 -- Jun 2026}
+          \resumeItemListStart
+            \resumeItem{Architected a full-stack social platform to connect students and developers for project collaboration and talent matching.}
+            \resumeItem{Implemented real-time project discovery and user matching algorithms to facilitate seamless team formation.}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{\href{http://suloku.com}{Diamond Puzzle Web Game}} $|$ \emph{React, Vite, Node.js, PostgreSQL}}{Jan 2026 -- Feb 2026}
+          \resumeItemListStart
+            \resumeItem{Designed and deployed a full-stack puzzle game featuring leaderboards, user preferences, and high-score tracking.}
+            \resumeItem{Built a production application serving global users with a responsive frontend and persistent backend data layer.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{AI/ML}{: LLMs, RAG, Agentic AI, Generative AI, Fine-tuning, Model Context Protocol (MCP), PyTorch} \\
+     \textbf{Languages}{: Python, JavaScript, TypeScript, SQL, HTML/CSS, Java, C} \\
+     \textbf{Frameworks}{: React, Node.js, Next.js, Vite, Flask, Django, TailwindCSS, Pandas, NumPy} \\
+     \textbf{Tools}{: Git, Docker, REST APIs, PostgreSQL, Supabase, Stripe, Vercel, VS Code}
+    }}
+ \end{itemize}
+
+\end{document}
