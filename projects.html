@@ -76,6 +76,53 @@
             <div class="section-content">
                 <div class="entry">
                     <div class="project-header">
+                        <strong>Agentic RAG Pipeline (ARAG)</strong>
+                        <span class="entry-dates">May 2026 – Present</span>
+                    </div>
+                    <p class="project-role">LangGraph, Supabase (pgvector), sentence-transformers(BAAI), NVIDIA NIM, Python</p>
+                    <ul class="entry-body">
+                        <li>Architected a 6-node agentic RAG system in LangGraph (retrieve, grade, rewrite, generate, verify, fallback) that grades and verifies grounding before answering, cutting hallucinations versus naive retrieve-then-generate RAG.</li>
+                        <li>Built a retrieval layer on Supabase pgvector with a 384-dimensional HNSW index and local sentence-transformer embeddings, returning the top-6 ranked chunks per query with inline citations via the NVIDIA NIM API.</li>
+                        <li>Implemented automatic query rewriting (up to 3 retries) and an LLM fallback path, keeping the system able to answer even when the document corpus lacks direct coverage.</li>
+                    </ul>
+                </div>
+                
+                <div class="entry">
+                    <div class="project-header">
+                        <strong>Small-Language-Model (SLM) Fine-Tuning Pipeline</strong>
+                    </div>
+                    <ul class="entry-body">
+                        <li>Designing a specialized "expert model" by fine-tuning a compact 3B parameter/weights model Llama-3B on curated open-source repositories and licensing metadata to auto-architect zero cost product tech stacks, matching 70B model recommendation quality.</li>
+                        <li>Implemented QLoRA &amp; DPO Alignment via Unsloth and Hugging Face TRL to minimize architectural hallucination and enforce free/permissive-tier constraint compliance.</li>
+                        <li>Synthesized Synthetic Instruction Pair s mapping high-level software requirements to optimal open-source tools, framework tradeoffs, and deployment paths within hardware budget limits.</li>
+                    </ul>
+                </div>
+
+                <div class="entry">
+                    <div class="project-header">
+                        <strong>Xyris Vision</strong>
+                        <span class="project-link"><a href="https://xyrisvision.vercel.app" target="_blank" rel="noopener">xyrisvision.vercel.app</a></span>
+                    </div>
+                    <p class="project-role">React, Supabase, Stripe, Computer Vision</p>
+                    <ul class="entry-body">
+                        <li>Built a privacy-first image redaction web app in 24 hours at the NJx Hackathon, acquiring 50+ active users.</li>
+                        <li>Engineered a client-side pipeline to scrub EXIF metadata and redact PII using computer vision, ensuring zero server-side data persistence for 100+ images processed. Integrated Stripe for usage-based billing and Supabase for secure backend authentication.</li>
+                    </ul>
+                </div>
+
+                <div class="entry">
+                    <div class="project-header">
+                        <strong>Collab IDE</strong>
+                    </div>
+                    <p class="project-role">Next.js, React, Python, Docker, Electron</p>
+                    <ul class="entry-body">
+                        <li>Engineered a desktop IDE application by forking VS Code with Electron and Next.js, enabling multi-developer real-time collaboration on unified software projects.</li>
+                        <li>Containerized workspace environments using Docker, ensuring synchronized package dependencies across all collaborators. Integrated a multi-agent AI orchestration engine that pools individuals AI agents to optimize context sharing and reduce overall LLM token usage.</li>
+                    </ul>
+                </div>
+
+                <div class="entry">
+                    <div class="project-header">
                         <strong>Secure AI Interview Environment</strong>
                         <span class="entry-dates">Aug 2026 – Present</span>
                     </div>
@@ -129,32 +176,6 @@
                         <span class="tag">React</span>
                         <span class="tag">Node.js</span>
                         <span class="tag">Full-Stack</span>
-                    </div>
-                </div>
-
-                <div class="entry">
-                    <div class="project-header">
-                        <strong>Xyris Vision</strong>
-                        <span class="project-link"><a href="https://xyrisvision.vercel.app" target="_blank"
-                                rel="noopener">xyrisvision.vercel.app</a></span>
-                        <span class="entry-dates">Jun 2026</span>
-                    </div>
-                    <p class="project-role">Founder &amp; Lead Developer · Built at NJx Hackathon 2026</p>
-                    <ul class="entry-body">
-                        <li>Built and deployed a privacy-focused image redaction tool in 20 hours, reaching 50+ active
-                            users during the event.</li>
-                        <li>Engineered a zero-persistence architecture processing images in-browser or in-memory — raw
-                            data never stored on servers.</li>
-                        <li>Automated metadata scrubbing (GPS, device tags) and PII redaction (faces, license plates)
-                            via computer vision pipelines.</li>
-                        <li>Integrated Stripe Checkout for pay-per-scan credit monetization with a secure Supabase
-                            backend.</li>
-                    </ul>
-                    <div class="tag-row">
-                        <span class="tag">Computer Vision</span>
-                        <span class="tag">Supabase</span>
-                        <span class="tag">Stripe</span>
-                        <span class="tag">Vercel</span>
                     </div>
                 </div>
 
